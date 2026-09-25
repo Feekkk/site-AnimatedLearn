@@ -170,7 +170,11 @@ body {
         @apply small-medium flex-between bg-neutral-800 rounded-full px-6 py-2.5 gap-2;
 
         div {
-          @apply size-8 rounded-full cursor-pointer bg-white text-black flex-center;
+          @apply size-8 rounded-full cursor-pointer text-white flex-center;
+        }
+
+        .active {
+          @apply bg-white text-black;
         }
       }
     }
