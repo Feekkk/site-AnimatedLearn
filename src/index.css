@@ -148,10 +148,18 @@ body {
     }
 
     .controls {
-      @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2;
+      @apply absolute z-50 bottom-40 lg:bottom-40 2xl:bottom-52 left-1/2 -translate-x-1/2 flex flex-col items-center;
 
       .info {
         @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
+      }
+
+      .model-credit {
+        @apply mt-3 w-[min(36rem,90vw)] text-center text-[11px] leading-relaxed text-white/70;
+
+        a {
+          @apply underline;
+        }
       }
 
       .color-control {
@@ -176,6 +184,14 @@ body {
         .active {
           @apply bg-white text-black;
         }
+      }
+    }
+
+    .model-status {
+      @apply absolute top-[42%] left-1/2 z-50 -translate-x-1/2 -translate-y-1/2 text-sm text-white bg-black/70 px-4 py-3 rounded-lg text-center;
+
+      button {
+        @apply mt-2 underline cursor-pointer;
       }
     }
 
